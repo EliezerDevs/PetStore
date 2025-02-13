@@ -36,8 +36,6 @@ public class PetController {
         if(petStatus.isPresent()) {
             return ResponseEntity.ok(petStatus.get());
         }
-
-
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
     }
